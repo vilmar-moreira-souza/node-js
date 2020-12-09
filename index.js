@@ -30,7 +30,7 @@ router.get('/sobre',function(req,res){
 }	);
 
 app.use('/',router);
-app.listen(process.env.port || 3000);
+app.listen(process.env.port || 3001);
 
 console.log("server rodando");
 
