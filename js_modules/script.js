@@ -23,3 +23,21 @@ for (var index in nomes){
     console.log(nomes[index] + "-" + nota1 + "-" + nota2 + "-"+ m + "-"+ passou(m))
 
 }
+//
+//
+var objeto = {
+  nome:"vlmar",
+  sobrenome:"souza",
+  idade:"25",
+  notas:[7,8,9.5,6],
+  media:function media(){
+      return (this.notas[0]+this.notas[1])/2
+  }
+}
+//
+//
+console.log("idade :" + objeto.idade)
+console.log("nome :" +  objeto.nome)
+console.log(objeto.notas.length)
+console.log(objeto.notas[0])
+console.log("media = " + objeto.media())
