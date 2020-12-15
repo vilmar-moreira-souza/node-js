@@ -1,5 +1,5 @@
 /*
-
+modulo 8- exercicios
 */
 //1 --ok
 function maior(n1, n2) {
@@ -82,9 +82,56 @@ function data(dia,mes,ano) {
   var d = new Date(ano, mes, dia)
   console.log(d)
 }
+//9 -Escreva um programa que receba um array de objetos com as propriedades altura e idade e imprima: A maior e menor altura e a média da idade
+let alt ={
+  idade: [20,21,22,23,24],
+  altura:[181,161,185,182]
+}
+
+function ar_altura_idade(alt) {
 
 
+  let a=alt.altura[0]
+  var b=alt.altura[0]
+  for (var i = 0; i < alt.altura.length; i++) {
+    if (alt.altura[i]>a) {
+      a=alt.altura[i]
+          }
+          if (alt.altura[i]<b) {
+            b=alt.altura[i]
+                }
 
+  }
+
+    let media_idade =0
+    for (var index in alt.idade) {
+        media_idade= media_idade +alt.idade[index]
+    }
+    media_idade = media_idade/alt.idade.length
+
+    console.log(b+" menor altura ")
+    console.log(a+" maior altura ")
+    console.log("media idade = " +media_idade)
+
+}
+
+//10 Escreva um programa que imprima o seguinte padrão
+//*
+//* *
+//* * *
+//* * * *
+//* * * * *
+
+function padrao(){
+  let texto ="*"
+  let texto1 ="*"
+  for (var i = 0; i < 5; i++) {
+    console.log("texto = " +texto )
+    texto = texto + texto1
+    console.log("\n")
+  }
+}
+//
 
 let ar5 = [1, 2, 3, 4, 5]
 maior(11,10)// ok-- 1
@@ -94,4 +141,6 @@ array3(ar5)  // ok --4
 par_impar(4) //ok --5
 multipo_de_4() // ok --6
 console.log(pessoa) // ok --7
-data(05,4,2021)
+data(05,4,2021) //ok --8
+ar_altura_idade(alt)// ok --9
+padrao()// ok --10
