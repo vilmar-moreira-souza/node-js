@@ -4,9 +4,9 @@ modulo 8- exercicios
 //1 --ok
 function maior(n1, n2) {
   if (n1 > n2) {
-    console.log(n1)
+    console.log("maior = " + n1)
   } else {
-    console.log("maio = " + n2)
+    console.log("maior = " + n2)
   }
 }
 //2
@@ -88,7 +88,7 @@ let alt = {
 
 function ar_altura_idade(alt) {
   let a = alt.altura[0]
-  var b = alt.altura[0]
+  let b = alt.altura[0]
   for (var i = 0; i < alt.altura.length; i++) {
     if (alt.altura[i] > a) {
       a = alt.altura[i]
@@ -114,7 +114,7 @@ function ar_altura_idade(alt) {
 //* * * * *
 function padrao() {
   let texto = "*"
-  let texto1 = "*"
+  const texto1 = "*"
   for (var i = 0; i < 5; i++) {
     console.log("texto = " + texto)
     texto = texto + texto1
