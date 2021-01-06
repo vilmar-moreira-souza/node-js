@@ -17,7 +17,8 @@ input {
   box-sizing: border-box;
   margin-bottom: 10px;
 }
-#calcular{
+
+#calcular {
   width: 39%;
   border-radius: 5px;
 }
