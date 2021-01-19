@@ -5,6 +5,8 @@ let inputCriancas = document.getElementById("criancas");
 let inputDuracao = document.getElementById("duracao");
 let resultado = document.getElementById("resultado");
 
+
+
 function calcular() {
   console.log("calculando.....");
 
@@ -18,15 +20,31 @@ function calcular() {
   let qtdTotalBebidas =
     bebidasPP(duracao) * adultos + (bebidasPP(duracao) / 2) * criancas;
 
-  resultado.innerHTML = `<p> ${qtdTotalCarne / 1000} kg de carne</P>`;
-  resultado.innerHTML += `<p>${Math.ceil(
+  //tratamento de erro e impreesssão tela
+  /*
+   */
+  if (adultos < 0) {
+    resultado.innerHTML = "adultos negativo"
+  } else
+  if (criancas < 0) {
+    resultado.innerHTML = "crianças negativo"
+
+  } else
+  if (duracao < 0) {
+    resultado.innerHTML = "duração negativo"
+  } else {
+
+    resultado.innerHTML = `<p> ${qtdTotalCarne / 1000} kg de carne</P>`;
+    resultado.innerHTML += `<p>${Math.ceil(
     qtdTotalCerveja / 355
   )} latas de cerveja</P>`;
-  resultado.innerHTML += ` <p>${Math.ceil(
+    resultado.innerHTML += ` <p>${Math.ceil(
     qtdTotalBebidas / 2000
   )} garrafas de bebidas</P>`;
+  }
 }
-
+//
+//
 function carnePP(duracao) {
   if (duracao >= 6) {
     return 650;
