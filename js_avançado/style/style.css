@@ -1,2 +1,27 @@
 /*
 */
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+#ola{
+	height: 200px;
+  		background-color: red;
+}
+
+#oi{
+	height: 100px;
+  		background-color: blue;
+}
+#botao{
+	
+}
+.botao_1{
+ 
+	padding: 10px;
+	background-color: rgb(100, 50, 250);
+	color:rgb(255, 255, 255);
+
+}
